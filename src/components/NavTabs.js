@@ -1,5 +1,5 @@
 import React from "react";
-/* This example requires Tailwind CSS v2.0+ */
+
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -36,7 +36,8 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     className={
                       currentPage === "About"
                         ? "active:bg-green-700"
-                        : "border-indigo-500  text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"}
+                        : "border-indigo-500  text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    }
                   >
                     Dashboard
                   </a>
@@ -83,7 +84,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="./images/anthony_zamora_shot.jpg"
                         alt=""
                       />
                     </Menu.Button>
@@ -156,16 +157,16 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                 <div className="flex-shrink-0">
                   <img
                     className="h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    src="./images/anthony_zamora_shot.jpg"
                     alt=""
                   />
                 </div>
                 <div className="ml-3">
                   <div className="text-base font-medium text-gray-800">
-                    Tom Cook
+                    Anthony Zamora
                   </div>
                   <div className="text-sm font-medium text-gray-500">
-                    tom@example.com
+                    anthony.zamora@gmail.com
                   </div>
                 </div>
               </div>
@@ -176,5 +177,3 @@ export default function NavTabs({ currentPage, handlePageChange }) {
     </Disclosure>
   );
 }
-
-// export default NavTabs;
