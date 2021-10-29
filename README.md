@@ -41,19 +41,19 @@ This project is covered under MIT
 
 - About page
 
-![]()
+![](public/images/about.png)
 
 - Project page
 
-![]()
+![](public/images/project.png)
 
 - Resume page
 
-![]()
+![](public/images/resume.png)
 
 - Contact page
 
-![]()
+![](public/images/contact.png)
 
 ## <ins>Contributions
 
