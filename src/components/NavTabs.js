@@ -17,16 +17,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                    alt="Workflow"
-                  />
+                 
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
@@ -42,10 +33,10 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     About
                   </a>
                   <a
-                    href="#blog"
-                    onClick={() => handlePageChange("Blog")}
+                    href="#Project"
+                    onClick={() => handlePageChange("Project")}
                     className={
-                      currentPage === "Blog"
+                      currentPage === "Project"
                         ? "active:bg-green-700"
                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }
@@ -53,10 +44,10 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     Projects
                   </a>
                   <a
-                    href="#home"
-                    onClick={() => handlePageChange("Home")}
+                    href="#Resume"
+                    onClick={() => handlePageChange("Resume")}
                     className={
-                      currentPage === "Home"
+                      currentPage === "Resume"
                         ? "active:bg-green-700"
                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }
@@ -129,16 +120,16 @@ export default function NavTabs({ currentPage, handlePageChange }) {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#blog"
-                onClick={() => handlePageChange("Blog")}
+                href="#Project"
+                onClick={() => handlePageChange("Project")}
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
                 Team
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#home"
-                onClick={() => handlePageChange("Home")}
+                href="#Resume"
+                onClick={() => handlePageChange("Resume")}
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
                 Projects
@@ -157,7 +148,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                 <div className="flex-shrink-0">
                   <img
                     className="h-10 w-10 rounded-full"
-                    src="./images/anthony_zamora_shot.jpg"
+                    src="https://previews.dropbox.com/p/thumb/ABXmPYTktAMKSYdqOSJF0q5pf7TdmTpi3Oznkc3DLBSLKwH9rHcP3NXXsuSRoVNPw2O3gw_eQzj3z6KSZoG1KkHWLViEFpJ9u4QrngG5ErwK78ucQWPu6pDdKwrgW_FNhWGewo28ExHtYfoI9lilS82ah7ffh-uITqxRiCZCo7BqbFbNsVCdKwYCzKfRP_GI9wqrOHunHrWavbRAAAMDkoofbFtUeNlBhH2LAcBYAzh248NFLVfHX6oWF9LredyO_t0jJ-9O9n_f3bQHc2D-rrz1BU74WbrfgjlUe03D9Bsu4A_n5CxMbTKKb5pLQ0QIkSLNAFoLfVnfeXrsY04Ud-d88nIGkcQKe1j2oM8MPwZiRQ/p.jpeg?size=2048x1536&size_mode=3"
                     alt=""
                   />
                 </div>

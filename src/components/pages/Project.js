@@ -9,7 +9,7 @@ const posts = [
       'Task is to build the back end for an e-commerce site to be able to add products, categories, and orders.',
   
     imageUrl:
-      './images/ecom.jpg',
+      'https://previews.dropbox.com/p/thumb/ABVciMTQdOUeSUquKMJD8vO7tbwlf3mMqB0tfbE-cjjxjAN1OUbQBpVMT7l5sZYdGyTBfIas26k5zKuzTO-tjmf2R3Z3V4gcnPfJLflJCiTEzy_orTIdHFTUdj8y6RVpHLzO-eDriZvf_IGbnA4uSctIq2SC9II84Axo-wLNQcwsS-_Rz6I8PwkI4XMQfU84EPFRjl9x27UHjaNrWnfKbl9O3LRX28uzUZS9rdvReSN_KSokAdPaqzwKSb_GH_DyGLvogfWn7sjvwNxOoZBlvfvy-KRqfMn9JQe6NqPgP5VaUuf0cB7X-lQW4SLNPSNwHyQx67MDOVOcTsXnFduQO9n9T6e1bAyo3YwgxB1Rd_4jzw/p.jpeg?fv_content=true&size_mode=5',
   },
   {
     title: 'Employee Tracker Demo Video! ',
@@ -19,7 +19,7 @@ const posts = [
       'View and manage the departments, roles, and employees in my company so that I can organize and plan my business.',
    
     imageUrl:
-      '/images/employeeTracker.jpg',
+      'https://previews.dropbox.com/p/thumb/ABW_mEkI3JV5Zxr1vg1FJ4yqOmVXaQYA7GpA1_hyOplggPlUStdwu9N2MS_BWTsz-AAOFySQjVB9fceMfSAFJblzrCZjRX07tNHalYYALGewdBDa9d5CqSXlxtTFdxuHAR8GjnVTOQNXomQxvjTbl6RQ6j9KCHsqgyAAZfM_tVuEIokIuqJlc_x59gHtjeAbLlxcPybvsVI7t3G2FSc60x7LR2hX3EWJhyJvwoPBTA26z3SktrGzjjIVDs2oEQXIyHBYJv1lfpu3usOSK0HPtihpxw9-v4unuuDP_V5MpIS8IVseHEaArIcj4imB5wNZaaTFjq41CFGKMg_KJcmMjLX18G2Dz8kUNTH6O7uSsqXFYw/p.jpeg?fv_content=true&size_mode=5',
   },
   {
     title: 'Check out Geek Emporium for all of your geek needs!',
@@ -29,11 +29,11 @@ const posts = [
       'We created an ecommerce application that allows you create listing for your figurines, cards, games, etc., or you can purchase items that other people are listing for sell.',
 
     imageUrl:
-      '/images/single-item.jpg',
+      'https://previews.dropbox.com/p/thumb/ABWQpfVBFiRad3nU_SF74lXpmnT1faKA3Wwi74Y4QQeq8SiyBcm-y7iwXrQTYSq7HFFRmg0SBPDcOnq3YnBh1tAeRnzWIbRCIrwrpX4xQS5yvS-x6TbdiXZx_O5GovjxQdOqPeW6xLmIa2UA2NipF5-Kz0EzTHEtuo41KriqpJ8MTHtktM_EbmYLWi4deTni1KH6DXdHfxmp7JC_JLa6A8yxOVZKaZ4La5_3N1flquCw_3QTJq9H27BF9bZEDL36k5XaSQ3BLC6NyfaB4fxuWhVkktwQq2SWR0h8ZCvpRsU6tCQFfIdTUE6DLg8OoElMiDaqkHiuZvC9Xh0GoThzGOhsTeRJfbicCEdxcoyCcIhSOw/p.jpeg?fv_content=true&size_mode=5',
   },
 ]
 
-export default function Example() {
+export default function Project() {
   return (
     <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
       <div className="absolute inset-0">
