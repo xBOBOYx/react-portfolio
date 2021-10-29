@@ -24,44 +24,33 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                   <a
                     href="#about"
                     onClick={() => handlePageChange("About")}
-                    className={
-                      currentPage === "About"
-                        ? "active:bg-green-700"
-                        : "border-indigo-500  text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }
+                    className=
+                  "border-indigo-500  text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    
                   >
                     About
                   </a>
                   <a
                     href="#Project"
                     onClick={() => handlePageChange("Project")}
-                    className={
-                      currentPage === "Project"
-                        ? "active:bg-green-700"
-                        : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }
+                    className= "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    
                   >
                     Projects
                   </a>
                   <a
                     href="#Resume"
                     onClick={() => handlePageChange("Resume")}
-                    className={
-                      currentPage === "Resume"
-                        ? "active:bg-green-700"
-                        : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }
+                    className= "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    
                   >
                     Resume
                   </a>
                   <a
                     href="#contact"
                     onClick={() => handlePageChange("Contact")}
-                    className={
-                      currentPage === "Contact"
-                        ? "active:bg-green-700"
-                        : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }
+                    className= "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    
                   >
                     Contact
                   </a>
@@ -112,11 +101,11 @@ export default function NavTabs({ currentPage, handlePageChange }) {
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
                 as="a"
-                href="#about"
+                href="#About"
                 onClick={() => handlePageChange("About")}
                 className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Dashboard
+               About
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
@@ -124,7 +113,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Project")}
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Team
+                Projects
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
@@ -132,15 +121,15 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Resume")}
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Projects
+                Resume
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#contact"
+                href="#Contact"
                 onClick={() => handlePageChange("Contact")}
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Calendar
+                Contact
               </Disclosure.Button>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
