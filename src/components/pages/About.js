@@ -42,7 +42,7 @@ export default function About() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
                     className="rounded-lg shadow-lg object-cover object-center"
-                    src="https://previews.dropbox.com/p/thumb/ABXmPYTktAMKSYdqOSJF0q5pf7TdmTpi3Oznkc3DLBSLKwH9rHcP3NXXsuSRoVNPw2O3gw_eQzj3z6KSZoG1KkHWLViEFpJ9u4QrngG5ErwK78ucQWPu6pDdKwrgW_FNhWGewo28ExHtYfoI9lilS82ah7ffh-uITqxRiCZCo7BqbFbNsVCdKwYCzKfRP_GI9wqrOHunHrWavbRAAAMDkoofbFtUeNlBhH2LAcBYAzh248NFLVfHX6oWF9LredyO_t0jJ-9O9n_f3bQHc2D-rrz1BU74WbrfgjlUe03D9Bsu4A_n5CxMbTKKb5pLQ0QIkSLNAFoLfVnfeXrsY04Ud-d88nIGkcQKe1j2oM8MPwZiRQ/p.jpeg?size=2048x1536&size_mode=3"
+                    src="https://previews.dropbox.com/p/thumb/ABV9aGDus7mHl7Sfh-WiwpfdzE7dMhpL5xJwNoV-YHyGOtSJBasx4imlGU44--OcPOaI6naa9GKZMe_NjLPRC44GHdZMmp-B60gUC3f_g-Ehru4CvSqmuibMd3zKjF7npIXUSYhm0Kfqri1Px7SIcItAMgf3UWlcJeyYz-ucWN2F15Zlq0ASH2zdeio75yV6xxIY498xvPkxCirIhRZ-N6uLGoKJ9_PlAaotCjUBoMMLH1RARJZz2ZpS0Kw8Vkfd0h0Wlr0Dt_jZAnshwwlYZ72sQpADW3Mmb3Mc3mHLa9KPNqJoOvtf44ex8o_2h4hmBWo1_Un-AXJP1sEkaxuyywkJ2K7ariXbmIc0IU8r5Y_evA/p.jpeg?fv_content=true&size_mode=5"
                     alt="Anthony Zamora"
                     width={1184}
                     height={1376}
