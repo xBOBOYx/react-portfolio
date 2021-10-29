@@ -1,12 +1,9 @@
 import React from "react";
-
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+
 
 export default function NavTabs({ currentPage, handlePageChange }) {
   return (

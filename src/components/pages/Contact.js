@@ -1,9 +1,38 @@
 import React from 'react';
-
-
+import { validateEmail } from '../../utils/helper';
+import { useState } from 'react';
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
-export default function Contact() {
+
+export default function Contact({ handlePageChange }) {
+
+  const [formState, setFormState] = useState({ name: '', email: '', message: '', phone: '', subject: '' });
+  const { name, email, message, phone, subject } = formState;
+  const [errorMessage, setErrorMessage] = useState('');
+
+function handleChange(e) {
+    if (e.target.name === 'email') {
+        const isValid = validateEmail(e.target.value);
+            if(!isValid) {
+                setErrorMessage('Your email is invalid');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!e.target.value.length) {
+              setErrorMessage(`${e.target.name} is required.`);
+            } else {
+              setErrorMessage('');
+            } 
+    }
+    if (!errorMessage) {
+    setFormState({...formState, [e.target.name]: e.target.value })
+    }
+}
+    function handleSubmit(e) {
+        e.preventDefault();
+  
+    }
   return (
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -206,6 +235,7 @@ export default function Contact() {
                       id="first-name"
                       autoComplete="given-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      defaultValue={name} onBlur={handleChange} 
                     />
                   </div>
                 </div>
@@ -220,6 +250,7 @@ export default function Contact() {
                       id="last-name"
                       autoComplete="family-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      defaultValue={name} onBlur={handleChange} 
                     />
                   </div>
                 </div>
@@ -234,6 +265,7 @@ export default function Contact() {
                       type="email"
                       autoComplete="email"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      defaultValue={email} onBlur={handleChange} 
                     />
                   </div>
                 </div>
@@ -254,6 +286,7 @@ export default function Contact() {
                       autoComplete="tel"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       aria-describedby="phone-optional"
+                      defaultValue={phone} onBlur={handleChange}
                     />
                   </div>
                 </div>
@@ -267,6 +300,8 @@ export default function Contact() {
                       name="subject"
                       id="subject"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      defaultValue={subject} onBlur={handleChange}
+                      
                     />
                   </div>
                 </div>
@@ -286,7 +321,7 @@ export default function Contact() {
                       rows={4}
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                       aria-describedby="message-max"
-                      defaultValue={''}
+                      defaultValue={message} onBlur={handleChange}
                     />
                   </div>
                 </div>
@@ -294,6 +329,9 @@ export default function Contact() {
                   <button
                     type="submit"
                     className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto"
+                    onSubmit={handleSubmit}
+                    // href="#Lost"
+                    // onClick={() => handlePageChange("Lost")}
                   >
                     Submit
                   </button>
@@ -306,3 +344,5 @@ export default function Contact() {
     </div>
   )
 }
+
+ 
