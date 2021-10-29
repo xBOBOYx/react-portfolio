@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { CameraIcon } from '@heroicons/react/solid'
 
 export default function About() {
   return (
