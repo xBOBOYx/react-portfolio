@@ -39,7 +39,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         : "border-indigo-500  text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }
                   >
-                    Dashboard
+                    About
                   </a>
                   <a
                     href="#blog"
@@ -50,7 +50,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }
                   >
-                    Team
+                    Projects
                   </a>
                   <a
                     href="#home"
@@ -61,7 +61,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }
                   >
-                    Projects
+                    Resume
                   </a>
                   <a
                     href="#contact"
@@ -72,7 +72,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }
                   >
-                    Calendar
+                    Contact
                   </a>
                 </div>
               </div>

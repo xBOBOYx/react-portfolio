@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function Example() {
+export default function About() {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
